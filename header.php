@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html <?php language_attributes(); ?>>
 <head>
-    <meta charset="UTF-8">
+    <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>AUTO from USA</title>
@@ -15,7 +15,7 @@
         <div class="container">
             <div class="header__top">
                 <a href = "#" class = "logo">
-                    <img src = "images/logo.svg" alt = "" class = "logo__img">
+                    <img src = "<?php bloginfo('template_url'); ?>/assets/images/logo.svg" alt = "" class = "logo__img">
                 </a>
                 <a href = "tel:+380505556677" class = "phone">+38 (050) 555 66 77</a>
             </div>
@@ -26,19 +26,19 @@
                 <a href="#" class="button">КОНСУЛЬТАЦИЯ ЭКСПЕРТА</a>
                 <div class="social header__social">
                     <a class="social-link" href = "#">
-                        <img src="images/instagram.svg" alt = "instagram-icon" class = "social-img">
+                        <img src="<?php bloginfo('template_url'); ?>/assets/images/instagram.svg" alt = "instagram-icon" class = "social-img">
                     </a>
                     <a class="social-link" href = "#">
-                        <img src = "images/telegram.svg" alt = "telegram-icon" class = "social-img">
+                        <img src = "<?php bloginfo('template_url'); ?>/assets/images/telegram.svg" alt = "telegram-icon" class = "social-img">
                     </a>
                     <a class="social-link" href = "#">
-                        <img src = "images/whatsapp.svg" alt = "whatsapp-icon" class = "social-img">
+                        <img src = "<?php bloginfo('template_url'); ?>/assets/images/whatsapp.svg" alt = "whatsapp-icon" class = "social-img">
                     </a>
                     <a class="social-link" href = "#">
-                        <img src = "images/facebook.svg" alt = "facebook-icon" class = "social-img">
+                        <img src = "<?php bloginfo('template_url'); ?>/assets/images/facebook.svg" alt = "facebook-icon" class = "social-img">
                     </a>
                 </div>
-                <img class="header__images" src = "images/ford-mustang.png" alt = "ford-mustang" >
+                <img class="header__images" src = "<?php bloginfo('template_url'); ?>/assets/images/ford-mustang.png" alt = "ford-mustang" >
             </div>
         </div>
     </header>
