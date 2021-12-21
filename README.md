@@ -1,1 +1,1 @@
-# -wordpress
+# Stretching the layout on Wordpress
