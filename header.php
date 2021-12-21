@@ -6,16 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>AUTO from USA</title>
 
-    <?php wp_head(); ?>
-
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/slick.css">
-    <link rel="stylesheet" href="css/style.css"> -->
+    <?php wp_head(); ?>   
 
 </head>
+
 <body>
     <header class="header">
         <div class="container">
