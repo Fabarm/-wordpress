@@ -1,1 +1,1 @@
-# Stretching the layout on Wordpress
+# Практикуюсь в натяжке своей верстки на Wordpress
