@@ -144,16 +144,11 @@ Template Name: home
         </div>
       </div>
 
-      <?php } } wp_reset_postdata(); ?>
-
+      <?php } } wp_reset_postdata(); ?>      
         
-        
-
       </div>
     </div>
   </section>
-
-
 
   <section class="contacts">
     <div class="container">
@@ -187,9 +182,7 @@ Template Name: home
         </div>
         <form class="contacts__form">
           <h2 class="title contacts__title">Оставить заявку</h2>
-          <input class="contacts__input" type="text" placeholder="Как Вас зовут?">
-          <input class="contacts__input" type="tel" placeholder="Ваш номер телефона">
-          <button class="contacts__btn button" type="submit">Отправить заявку</button>
+          <?php echo do_shortcode('[contact-form-7 id="31" title="Контактная форма"]') ?>
         </form>
       </div>
     </div>
