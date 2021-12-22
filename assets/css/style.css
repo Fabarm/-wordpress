@@ -243,6 +243,7 @@ a{
     padding: 6px 6px 16px 6px; 
     text-align: center;
     transition: all .5s; 
+    cursor: pointer;
 }
 .carousel__item-box:hover{
     color: #fff;
@@ -262,6 +263,7 @@ a{
     justify-content: center;
     margin-top: 50px;
     list-style: none;
+    cursor: pointer;
 }
 .carousel .slick-dots button{
     font-size: 0;
@@ -524,6 +526,7 @@ a{
     }
     .carousel .slick-dots button{
         width: 10px;
+        cursor: pointer;
     }
     .contacts__form{
         padding: 50px 10px 57px;
