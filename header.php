@@ -14,10 +14,8 @@
     <header class="header">
         <div class="container">
             <div class="header__top">
-                <a href = "#" class = "logo">
-                    <img src = "<?php bloginfo('template_url'); ?>/assets/images/logo.svg" alt = "" class = "logo__img">
-                </a>
-                <a href = "tel:+380505556677" class = "phone">+38 (050) 555 66 77</a>
+                <?php the_custom_logo(); ?>
+                <a href = "tel:<?php the_field('phone-number'); ?>" class = "phone"><?php the_field('phone'); ?></a>
             </div>
             <div class="header__content">
                 <h1 class="header__title">авто из сша “под ключ”</h1>
