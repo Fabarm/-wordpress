@@ -43,6 +43,7 @@ Template Name: home
 
         $myposts = get_posts([ 
           'numberposts' => -1,
+          'category' => 2
         ]);
 
         if( $myposts ){

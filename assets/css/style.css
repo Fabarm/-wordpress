@@ -28,6 +28,9 @@ a{
     min-height: 700px;
     color: #fff;
 }
+.header.header-private{
+    min-height: auto;
+}
 .header__top{
     padding: 47px 0 45px;
     display: flex;
