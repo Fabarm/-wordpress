@@ -23,16 +23,16 @@
                 <p class="header__text">Подбор, покупка, доставка, растаможка, ремонт, оформление по договору</p>
                 <a href="#" class="button">КОНСУЛЬТАЦИЯ ЭКСПЕРТА</a>
                 <div class="social header__social">
-                    <a class="social-link" href = "#">
+                    <a class="social-link" href = "<?php the_field("instagram-link"); ?>">
                         <img src="<?php bloginfo('template_url'); ?>/assets/images/instagram.svg" alt = "instagram-icon" class = "social-img">
                     </a>
-                    <a class="social-link" href = "#">
+                    <a class="social-link" href= "<?php the_field("telegram-link");?>">
                         <img src = "<?php bloginfo('template_url'); ?>/assets/images/telegram.svg" alt = "telegram-icon" class = "social-img">
                     </a>
-                    <a class="social-link" href = "#">
+                    <a class="social-link" href = "<?php the_field("whatsapp-link");?>">
                         <img src = "<?php bloginfo('template_url'); ?>/assets/images/whatsapp.svg" alt = "whatsapp-icon" class = "social-img">
                     </a>
-                    <a class="social-link" href = "#">
+                    <a class="social-link" href = "<?php the_field("facebook-link");?>">
                         <img src = "<?php bloginfo('template_url'); ?>/assets/images/facebook.svg" alt = "facebook-icon" class = "social-img">
                     </a>
                 </div>
