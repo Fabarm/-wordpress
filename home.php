@@ -22,32 +22,10 @@ Template Name: home
   <section class="benefits">
     <div class="container">
       <div class="benefits__inner">
-        <img data-wow-delay="2s" class="benefits__images wow animate__fadeInUp" src="<?php bloginfo('template_url'); ?>/assets/images/car.png" alt="car">
+        <img data-wow-delay="2s" class="benefits__images wow animate__fadeInUp" src="<?php the_field("benefits-img");?>" alt="car">
         <div class="benefits__content">
           <h2 class="title benefits__title">ПОЧЕМУ МЫ?</h2>
-          <ul class="benefits__list">
-            <li class="benefits__item">
-              <p class="benefits__item-num">650</p>
-              <p class="benefits__item-title">успешно доставленных авто</p>
-              <p class="benefits__item-text">
-                большой опыт пригона автомобилей из США под ключ, все клиенты остались довольны на 100%
-              </p>
-            </li>
-            <li class="benefits__item">
-              <p class="benefits__item-num">5</p>
-              <p class="benefits__item-title">лет на рынке Украины</p>
-              <p class="benefits__item-text">
-                Работаем по всей территории Украины, работаем по договору с клиентами
-              </p>
-            </li>
-            <li class="benefits__item">
-              <p class="benefits__item-num">100%</p>
-              <p class="benefits__item-title">доверия клиентов</p>
-              <p class="benefits__item-text">
-                Онлайн отчетность. Вы всегда в курсе статуса подбора вашего авто. Фото и видео отчет
-              </p>
-            </li>
-          </ul>
+          <?php the_field("benefits-text");?>
         </div>
       </div>
     </div>
