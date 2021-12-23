@@ -18,9 +18,9 @@
                 <a href = "tel:<?php the_field('phone-number'); ?>" class = "phone"><?php the_field('phone'); ?></a>
             </div>
             <div class="header__content">
-                <h1 class="header__title">авто из сша “под ключ”</h1>
-                <h2 class="header__subtitle">ЗАКАЖИ СЕБЕ АВТО ИЗ США С ВЫГОДОЙ ДО 40%</h2>
-                <p class="header__text">Подбор, покупка, доставка, растаможка, ремонт, оформление по договору</p>
+                <h1 class="header__title"><?php the_field("title"); ?></h1>
+                <h2 class="header__subtitle"><?php the_field("triger"); ?></h2>
+                <p class="header__text"><?php the_field("text"); ?></p>
                 <a href="#" class="button">КОНСУЛЬТАЦИЯ ЭКСПЕРТА</a>
                 <div class="social header__social">
                     <a class="social-link" href = "<?php the_field("instagram-link"); ?>">
@@ -36,7 +36,7 @@
                         <img src = "<?php bloginfo('template_url'); ?>/assets/images/facebook.svg" alt = "facebook-icon" class = "social-img">
                     </a>
                 </div>
-                <img class="header__images" src = "<?php bloginfo('template_url'); ?>/assets/images/ford-mustang.png" alt = "ford-mustang" >
+                <img class="header__images" src="<?php the_field("top-images"); ?>"  alt = "ford-mustang" >
             </div>
         </div>
     </header>

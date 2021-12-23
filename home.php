@@ -11,69 +11,10 @@ Template Name: home
       <h2 class="title">НАШИ УСЛУГИ</h2>
       <div class="services__inner">
         <div class="services__content">
-          <div class="services__content-box">
-            <h6 class="services__content-title">
-              Почему ввоз авто из США?
-            </h6>
-            <div class="services__content-textbox">
-              <p class="services__content-text">
-                Мы сравнили рынки США с Европейскими и поняли, что покупка автомобиля в Америке выгоднее в несколько
-                раз, как бы
-                парадоксально это не звучало. Это вызвано продуманной логистикой, уровнем развития сервисов по
-                оцениванию состояния авто
-                и самим процессом покупки автомобиля.
-              </p>
-              <p class="services__content-text">
-                Большинство граждан США берут автомобиль в лизинг на несколько лет и все время эксплуатации сама
-                лизинговая компания
-                занимается постоянным ТО автомобиля, вследствие чего, машины из США – один из лучших выборов для
-                автолюбителей Украины.
-              </p>
-            </div>
-          </div>
-          <div class="services__content-box">
-            <h6 class="services__content-title">
-              Из-за чего такая низкая цена?
-            </h6>
-            <div class="services__content-textbox">
-              <p class="services__content-text">
-                Битые автомобили из США выкупаются с аукционов страховых компаний. На этих аукционах машина теряет
-                половину цены даже
-                из-за минимальных повреждений. Если учитывать денежные затраты, а именно выкуп, доставку, таможню и
-                ремонт, то цена
-                аналогичного по состоянию автомобиля в Украине будет выше на 35-50%, а новые будут стоить космических
-                денег.
-              </p>
-            </div>
-            <a class="button button--decor" href="#">КОНСУЛЬТАЦИЯ ЭКСПЕРТА</a>
-          </div>
+            <?php the_field("service-text");?>
+            <a class="button button--decor" href="#">КОНСУЛЬТАЦИЯ ЭКСПЕРТА</a>          
         </div>
-        <ol class="services__list">
-          <li data-wow-delay="1s" class="services__item wow animate__fadeInRight">
-            <p class="services__item-title">Покупка авто</p>
-            <p class="services__item-text">Подбор автомобиля и экспертная проверка</p>
-          </li>
-          <li data-wow-delay="1.2s" class="services__item wow animate__fadeInRight">
-            <p class="services__item-title">Доставка морем</p>
-            <p class="services__item-text">Расчет оптимальной стоимости доставки авто</p>
-          </li>
-          <li data-wow-delay="1.4s" class="services__item wow animate__fadeInRight">
-            <p class="services__item-title">Растаможка авто</p>
-            <p class="services__item-text">Прохождение таможенного оформления (2-3 дня)</p>
-          </li>
-          <li data-wow-delay="1.6s" class="services__item wow animate__fadeInRight">
-            <p class="services__item-title">Ремонт авто</p>
-            <p class="services__item-text">Комплексный ремонт автомобиля на СТО</p>
-          </li>
-          <li data-wow-delay="1.8s" class="services__item wow animate__fadeInRight">
-            <p class="services__item-title">Сертификация</p>
-            <p class="services__item-text">Услуга предоставляется по желанию</p>
-          </li>
-          <li data-wow-delay="2s" class="services__item wow animate__fadeInRight">
-            <p class="services__item-title">Постановка на учет</p>
-            <p class="services__item-text">Оформление автомобиля в Украине</p>
-          </li>
-        </ol>
+        <?php the_field("service-item");?>
       </div>
     </div>
   </section>
@@ -167,20 +108,21 @@ Template Name: home
             <li class="contacts__item">
               <p class="contacts__item-title">Время работы</p>
               <p class="contacts__item-text">
-              <?php the_field("working-hours");?>
+                <?php the_field("working-hours");?>
               </p>
             </li>
             <li class="contacts__item">
               <p class="contacts__item-title">Телефон</p>
               <p class="contacts__item-text">
-              <a href = "tel:<?php the_field('phone-number'); ?>" ><?php the_field('phone'); ?></a>
+              <a href = "tel:<?php the_field('phone-number'); ?>" >
+                <?php the_field('phone'); ?></a>
               </p>
             </li>
           </ul>
         </div>
         <form class="contacts__form">
           <h2 class="title contacts__title">Оставить заявку</h2>
-          <?php echo do_shortcode('[contact-form-7 id="31" title="Контактная форма"]') ?>
+            <?php echo do_shortcode('[contact-form-7 id="31" title="Контактная форма"]') ?>
         </form>
       </div>
     </div>
